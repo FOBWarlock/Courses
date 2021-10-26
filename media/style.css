@@ -1,0 +1,194 @@
+@media (min-width: 1800px) { 
+    .first{
+        display: flex;
+    }
+
+    .first .colored{
+        flex: 1 0 0;
+    }
+
+    .second{
+        display: flex;
+    }
+
+    .third{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .third .colored{
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+
+    .fourth{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .fourth .colored{
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+
+    .fourth .colored:last-child{
+        flex-grow: 1;
+    }
+
+    .fifth{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .fifth .colored {
+        flex: 1 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .first{
+        display: flex;
+        flex-wrap: nowrap;
+    }    
+
+    .first .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .third{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .third .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .fourth{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .fourth .colored{
+       flex-basis: 30%;
+       flex-grow: 1;
+        
+    }
+
+    .fourth .colored:nth-child(2){
+        flex-grow: 0;
+    }
+
+    .third,
+    .fifth
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .third .colored,
+    .fifth .colored
+    {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+} 
+
+
+@media (min-width: 960px) {
+    .third{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .third .colored{ 
+        flex-basis: 50%;
+        flex-grow: 1;
+    } 
+
+    .fourth{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .fourth .colored{
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    
+    .fourth .colored:nth-child(2){
+        flex-grow: 0;
+    }
+
+    .fifth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fifth .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first .colored{
+        flex: 1 0 50%;
+    }
+
+    .second{
+        display: flex;
+    }
+
+    .second .colored{
+        flex: 1 0 0;
+    }
+
+    .fourth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fourth .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .fourth,
+    .fifth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fourth .colored,
+    .fifth .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 320px) {
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first .colored{
+        flex: 1 0 50%;
+    }
+
+    .second{
+        display: flex;
+    }
+
+    .second .colored{
+        flex: 1 0 50%;
+    }
+}
