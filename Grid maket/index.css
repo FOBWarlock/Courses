@@ -1,0 +1,72 @@
+.logo,
+.menu,
+.new,
+.list,
+.nav,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background: #BF2626;
+}
+
+.menu {
+    background: #6F7307;
+}
+
+.new {
+    background: #F5B63F;
+}
+
+.list {
+    background: #F2B199;
+}
+
+.nav {
+    background: #BFB524;
+}
+
+.footer {
+    background: #252E40;
+}
+
+body {
+    display: grid;
+    grid-template-columns: [a] 100px [b] 65fr [c] 35fr [d];
+    grid-template-rows: [first] 100px [second] 300px [third] 150px [fourth];
+}
+
+.logo {
+    grid-column: a / b;
+    grid-row: first / second;
+    color: slategray;
+} 
+
+.menu {
+    grid-column: b / d;
+    grid-row: first / second;
+}
+
+.new {
+    grid-column: a / b;
+    grid-row: second / third;
+}
+
+.list {
+    grid-column: b / c;
+    grid-row: second / third;
+}
+
+.nav {
+    grid-column: c / d;
+    grid-row: second / fourth;
+}
+
+.footer {
+    grid-column: a / c;
+    grid-row: third / fourth;
+    color: greenyellow;
+}
